@@ -12,7 +12,7 @@ public class RentalTest {
 
     @Before
     public void setUp(){
-        movie  = new Movie(MovieTest.MOVIE_TITLE, Movie.REGULAR);
+        movie  = new Movie(MovieTest.MOVIE_TITLE1, Movie.REGULAR);
         rental = new Rental(movie, DAYS_RENTED);
     }
 

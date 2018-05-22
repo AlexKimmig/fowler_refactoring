@@ -13,7 +13,7 @@ public class CustomerTest {
 
     @Before
     public void setUp() {
-        movie = new Movie(MovieTest.MOVIE_TITLE, Movie.NEW_RELEASE);
+        movie = new Movie(MovieTest.MOVIE_TITLE1, Movie.NEW_RELEASE);
         rental = new Rental(movie, RentalTest.DAYS_RENTED);
         customer = new Customer(name);
         customer.addRental(rental);
