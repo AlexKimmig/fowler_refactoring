@@ -1,8 +1,9 @@
+package alexander_kimmig.software_engineering;
 
-import java.lang.*;
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Vector;
 
-class Customer {
+public class Customer {
     private String name;
     private Vector rentals = new Vector();
 

@@ -1,4 +1,6 @@
-class Rental {
+package alexander_kimmig.software_engineering;
+
+public class Rental {
     private Movie movie;
     private int daysRented;
 

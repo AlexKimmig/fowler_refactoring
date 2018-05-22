@@ -1,3 +1,5 @@
+import alexander_kimmig.software_engineering.Movie;
+import alexander_kimmig.software_engineering.Rental;
 import org.junit.Before;
 import org.junit.Test;
 
