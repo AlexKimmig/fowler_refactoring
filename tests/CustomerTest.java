@@ -12,7 +12,7 @@ public class CustomerTest {
     private Customer customer;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         movie = new Movie(MovieTest.MOVIE_TITLE, Movie.NEW_RELEASE);
         rental = new Rental(movie, RentalTest.DAYS_RENTED);
         customer = new Customer(name);
@@ -20,15 +20,15 @@ public class CustomerTest {
     }
 
     @Test
-    public void getNameTest(){
+    public void getNameTest() {
         assertEquals(name, customer.getName());
     }
 
     @Test
-    public void getStatementTest(){
-        String expected = "Rental Record for "+name+"\n" +
+    public void getStatementTest() {
+        String expected = "Rental Record for " + name + "\n" +
                 "\tTitle\tDays\tAmount\n" +
-                "\t"+movie.getTitle()+"\t\t"+rental.getDaysRented()+"\t12.0\n" +
+                "\t" + movie.getTitle() + "\t\t" + rental.getDaysRented() + "\t12.0\n" +
                 "Amount owed is 12.0\n" +
                 "You earned 2 frequent renter points";
 
