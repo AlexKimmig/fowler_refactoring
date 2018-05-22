@@ -26,18 +26,14 @@ class Customer {
         result += "\t" + "Title" + "\t" + "Days" + "\t" + "Amount" + "\n";
 
         while (enum_rentals.hasMoreElements()) {
-            double thisAmount = 0;
             Rental currentRental = (Rental) enum_rentals.nextElement();
-
-            //determine amounts for each line
-            thisAmount += currentRental.getCosts(currentRental);
 
             // add frequent renter points
             frequentRenterPoints += currentRental.getFrequentRentalPoints();
 
             //show figures for this rental
-            result += "\t" + currentRental.getMovie().getTitle() + "\t" + "\t" + currentRental.getDaysRented() + "\t" + String.valueOf(thisAmount) + "\n";
-            totalAmount += thisAmount;
+            result += "\t" + currentRental.getMovie().getTitle() + "\t" + "\t" + currentRental.getDaysRented() + "\t" + String.valueOf(currentRental.getCosts(currentRental)) + "\n";
+            totalAmount +=  currentRental.getCosts(currentRental);;
         }
         //add footer lines
         result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
